@@ -1,0 +1,41 @@
+#step3 .title h3{
+    color: #E5E7EB;
+    font-size: 20px;
+    padding: 30px;
+}
+.display {
+    margin: 3px;
+    display: flex;
+}
+.display label{
+    margin-top: 2px;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #a1a1a9;
+}
+.topics{
+    display: block;
+    padding-top: 30px;
+}
+.display p{
+    display: block;
+    font-size: 18px;
+    color: #E5E7EB;
+    font-size: 18px;
+    margin-left: 40px;
+}
+
+.display .disp-p{
+    margin-left: 4px;
+
+}
+#step3 button {
+    width: 150px;
+    background: linear-gradient(#845EEE, #652CD1);
+    color: #E5E7EB;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 120px;
+    margin-left: 150px;
+}

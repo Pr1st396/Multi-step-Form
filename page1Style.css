@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background: #121826;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+body{
+    padding: 100px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+.bg-image-1,
+.bg-image-2 {
+  position: absolute;
+}
+
+.bg-image-1 {
+  top: -20%;
+  left: -20%;
+  z-index: 1;
+}
+.bg-image-2 {
+  bottom: -20%;
+  right: -20%;
+  z-index: 1;
+}
+
+form{
+    margin-left: 45px;
+}
+form .card{
+    background-color: #212936;
+    width: 450px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 1px solid #A1A1A9;
+    border-radius: 15px;
+    display: none;
+    margin-bottom: 30px;
+}
+.card.active {
+    display:block;
+}
+#step1 h3{
+    padding: 35px;
+    color: #E5E7EB;
+    font-size: 20px;
+}
+#step1 label{
+    padding: 35px;
+    color: #A1A1A9;
+    font-size: 16px;
+    margin-top: 30px;
+}
+#step1 input{
+    background-color: transparent;
+    display: block;
+    width: 350px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #A1A1A9;
+    border-radius: 10px;
+    border-collapse: collapse;
+    font-size: 12px;
+    color: #E5E7EB;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#step1 input:hover{
+    cursor: pointer;
+    width: 352px;
+    padding: 16px;
+}
+#step1 input:focus{
+    width: 352px;
+    padding: 16px;
+    outline: none;
+    border: 2px solid #A1A1A9;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+#step1 button{
+    width: 150px;
+    background: linear-gradient(#845EEE, #652CD1);
+    color: #E5E7EB;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+.steps {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .steps .circle {
+    height: 10px;
+    width: 10px;
+    margin-right: 20px;
+    background-color: #4D5562;
+    border-radius: 50px;
+    margin: 15px;
+  }
+
+  .steps .circle.active {
+    box-shadow: 0 0 0px 5px rgba(120, 37, 197, 0.3);
+    background-color: #652CD1;
+  }
+
+  .steps .circle.previous {
+    background-color: #652CD1;
+  }
+  .counter {
+    text-align: center;
+    font-size:0.75rem;
+    color: #4D5562;
+  }
+@media (max-width:640px) {
+    .card {
+        max-width: 300px;
+    }
+}

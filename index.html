@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="page1Style.css" />
+    <link rel="stylesheet" href="page2Style.css" />
+    <link rel="stylesheet" href="page3Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <img class="bg-image-1" src="./blur-radial.svg" alt="" />
+    <img class="bg-image-2" src="./blur-radial.svg" alt="" />
+    <form id="userInformation" class="register-1" action="Registration Summary.html" method="post">
+        <div class="card active" id="step1">
+            <div class="title">
+                <h3>Register</h3>
+            </div>
+
+            <label for="username">Name</label>
+            <input name="user" type="text" id="userName" class="name-block-1" placeholder="Enter your name" />
+
+            <label for="usermail">Email</label>
+            <input name="email" type="email" id="userEmail" class="email-block-1" placeholder="example@gmail.com" />
+
+            <button id="next1" type="button" data-next>Continue</button>
+        </div>
+        <div class="card" id="step2">
+            <div class="title">
+                <h3>Which topic are you interested in?</h3>
+            </div>
+
+            <div class="form-topic">
+                <input name="products" type="checkbox" id="soft-dev" class="topic" value="Software Development" />
+                <label for="soft-dev">Software Development</label>
+            </div>
+
+            <div class="form-topic">
+                <input name="products" type="checkbox" id="user-ex" class="topic" value="User Experience" />
+                <label for="user-ex">User Experience</label>
+            </div>
+
+            <div class="form-topic">
+                <input name="products" type="checkbox" id="gra-des" class="topic" value="Graphic Design" />
+                <label for="gra-des">Graphic Design</label>
+            </div>
+
+            <button id="next2" type="button" data-next>Continue</button>
+        </div>
+        <div class="card" id="step3">
+            <div class="title">
+                <h3>Summary</h3>
+            </div>
+
+            <div class="display credits">
+                <label for="username">Name:</label>
+                <p id="summaryUserName"class="disp-p"></p>
+            </div>
+
+            <div class="display credits">
+                <label for="usermail">Email:</label>
+                <p id="summaryUserEmail" class="disp-p"></p>
+            </div>
+
+            <div class="display topics">
+                <label class="separate">Topics:</label>
+                <p id="summaryTopics"></p>
+
+            </div>
+            <button id="confirm" type="submit" data-confirm>Confirm</button>
+        </div>
+    </form>
+    <div class="container">
+        <p class="counter">Step 1 of 3</p>
+        <div class="steps">
+            <span class="circle active"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+        </div>
+    </div>
+
+    <script src="MultiScript.js"></script>
+</body>
+
+</html>
